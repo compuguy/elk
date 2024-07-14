@@ -51,6 +51,10 @@ ENV PORT=5314
 # Specify container only environment variables ( can be overwritten by runtime env )
 ENV NUXT_STORAGE_FS_BASE='/elk/data'
 
+# Set to istoleyour.pw
+ENV NUXT_PUBLIC_DEFAULT_SERVER=istoleyour.pw
+ENV NUXT_PUBLIC_SINGLE_INSTANCE=true
+
 # Persistent storage data
 VOLUME [ "/elk/data" ]
 
